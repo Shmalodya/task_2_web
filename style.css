@@ -1,3 +1,35 @@
+@font-face{
+    font-family: 'Pacifico';
+    src: url(./Fonts/Pacifico.ttf);
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face{
+    font-family: 'PT_sans_web_bold';
+    src: url(./Fonts/PT_Sans-Web-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+    }
+@font-face{
+    font-family: 'PT_sans_web_bolditalic';
+    src: url(./Fonts/PT_Sans-Web-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+    }
+@font-face{
+    font-family: 'PT_sans_web_italic';
+    src: url(./Fonts/PT_Sans-Web-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+    }
+ @font-face{
+     font-family: 'PT_sans_web_regular';
+     src: url(./Fonts/PT_Sans-Web-Regular.ttf);
+     font-weight: normal;
+     font-style: normal;
+     }
+
 *{
     margin: 0;
     padding: 0;
@@ -7,13 +39,43 @@ header, nav, main, footer{
     padding: 0 10%;
 }
 
-.about_page_block{
-    padding: 0 10%;
-    background-color: #DC001E;
+/* HEADER */
+/*        */
+/* ====== */
+
+header>div{
+    display: inline;
 }
 
-.disc_cover{
-    width: 100%;
-    height: 100%;
-    background-image: url(/Effects/disc-cover.png)
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    height: 100px;
+}
+nav>a,div{
+    /* margin: 5px; */
+    padding: 5px;
+    flex: 0 1 auto;
+    /* background-color: #223; */
+}
+.logo{
+
+
+    margin: 0 auto;
+}
+nav>div{
+    display: inline-block;
+}
+
+.about_page_block{
+    padding: 0 10%;
+    background-color: #CC3333;
+    border-top: inset 0px 3px 50%  black;
+}
+
+.pacifico{
+    font-family: Pacifico;
+    font-size: 40pt;
 }
