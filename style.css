@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer{
+    padding: 0 10%;
+}
+
+.about_page_block{
+    padding: 0 10%;
+    background-color: #DC001E;
+}
+
+.disc_cover{
+    width: 100%;
+    height: 100%;
+    background-image: url(/Effects/disc-cover.png)
+}
