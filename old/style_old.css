@@ -1,0 +1,327 @@
+@font-face{
+font-family: 'Pacifico';
+src:url(Fonts/Pacifico.ttf);
+}
+
+@font-face{
+font-family: 'PT_Sans-Web-Regular';
+src:url(Fonts/PT_Sans-Web-Regular.ttf);
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+font-family: 'PT_Sans-Web-Italic';
+src:url(Fonts/PT_Sans-Web-Italic.ttf);
+font-weight: normal;
+font-style: italic;
+}
+
+@font-face{
+font-family: 'PT_Sans-Web-Bold';
+src:url(Fonts/PT_Sans-Web-Bold.ttf);
+font-weight: bold;
+font-style: normal;
+}
+@font-face{
+font-family: 'PT_Sans-Web-BoldItalic';
+src:url(Fonts/PT_Sans-Web-BoldItalic.ttf);
+font-weight: bold;
+font-style: italic;
+}
+
+@media  screen and (max-width:  400px ){
+    body{
+        margin: 100px;
+    }
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/images/fon1.jpg);
+}
+
+/* HEADER */
+
+header{
+    padding: 5px 0 5px 10%;
+    position: relative;
+    display: flex;
+    z-index:2;
+    height: 20px;
+    /*width*/: 100%;
+    background-color: #272727;
+}
+
+.acc_name{
+    flex:3;
+    color: white;
+    font-family: 'PT_Sans-Web-Bold';
+    font-weight: bold;
+}
+
+.manage_account>a{
+    text-decoration: none;
+    color: #6B6B6B;
+    font-family: PT_Sans-Web-Regular;
+    font-weight: normal;
+    font-style: normal;
+}
+.sign_btn{
+    flex: 1;
+}
+
+.sign_btn>a{
+    text-decoration: none;
+    color: #6B6B6B;
+    font-family: 'PT_Sans-Web-Bold';
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    height: 100px;
+    background-color: inherit;
+    box-shadow:2px 0 2px 2px black;
+    opacity: 1;
+    padding: 10px 10%
+}
+
+.menu{
+flex: 3;
+}
+.logo{
+flex: 1;
+}
+
+.search_bar{
+flex: 3;
+}
+
+/*menu*/
+
+.menu>ul{
+    margin-top: 40px;
+
+}
+.menu>ul>li{
+    border: none;
+    list-style: none;
+    display: inline-block;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    color: red;
+    padding: 20px;
+}
+.menu>ul>li>a:hover{
+    transition: 0.5s;
+    text-shadow:  3px 3px 10px black;
+}
+
+.menu>ul>li>a:focus{
+    border: none;
+}
+.menu>ul>li>a:visited {
+    border-bottom: 2px solid red;
+}
+/* MAIN BLOCK */
+main{
+    
+}
+
+article{
+
+    display: flex;
+    height: 100px;;
+    background-color: #CC3333;
+    /*padding: 20px 10%;*/
+    
+
+}
+
+.title_bar{
+    flex: 1;
+    color: white;
+    /*margin-bottom: 10px;*/
+    text-shadow:  3px 3px 10px black;
+}
+
+.title_bar>span{
+    display: flex;
+}
+.title_bar>span:first-child{
+    font-weight: bold;
+    /*padding: 5px;*/
+    /*margin: 0;*/
+}
+
+.title_bar>span:last-child{
+    font-family: Pacifico;
+    /*font-size: 40px;*/
+    /*margin: 0;*/
+}
+
+.add_card_btn{
+    /*flex: 1;*/
+    width: 100%;
+    height: 50px;
+    /*flex: 3;*/
+}
+
+.add_card_btn_container{
+    flex: 1;
+}
+
+a.add_card_btn {
+    display: table;
+    color: white;
+    /*padding: 20px 80px;*/
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow:  2px 2px 4px black;
+    border-radius: 3px;
+    background: #B23434;
+    box-shadow: 0 2px 2px black;
+    transition: 0.5s;
+    font:PT_Sans-Web-Bold bold italic;
+} 
+
+a.add_card_btn:hover{
+    transition: 0.9s;
+     box-shadow:inset 0 0px 3px black;
+}
+a.add_card_btn:active{
+    transition: 0.9s;
+    background-color: #862529;
+     box-shadow:inset 0 0px 3px black;
+}
+
+
+.delivery{
+    color: white;
+    font-family: 'PT_Sans-Web-Bold';
+    font-weight: bold;
+    font-size: 11px;
+    /*padding-left: 30px;*/
+    text-shadow:  3px 3px 2px black;
+}
+
+section{
+    display: flex;
+    flex: 3 1;
+    /*padding: 20px 10%;*/
+}
+
+.l_block{
+    flex: 3;
+}
+
+.r_block{
+    flex: 1;
+    /*padding-left: 30px;*/
+}
+
+.r_block>p{
+    text-align: justify;
+}
+
+.r_block>h2,h1{
+    font-family:Pacifico;
+}
+
+.r_block>h1{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.r_block>span{
+    font-size: 10px;
+    color: gray;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.r_block>img{
+    margin-bottom: 0px;
+    width: 100%;
+}
+/* FOOTER */
+
+footer{
+    
+}
+
+.t_footer{
+    display: flex;
+    padding: 0 9%;
+    background-color: #CBCBCB;
+}
+
+.t_footer>div{
+    flex:1;
+    margin:0 10px;
+    font-family: PT_Sans-Web-Regular;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.t_footer>div>h2{
+    font-family:Pacifico;
+    margin-bottom: 2px;
+}
+
+.t_footer>div>p{
+    text-align: justify;
+    margin-top: 5px;
+
+}
+
+.input_block{
+    
+}
+
+.email{
+    width: calc(98%);
+}
+
+.button{
+    width: 99%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.b_footer{
+    color: white;
+    display: flex;
+    height: 35px;
+    padding: 0 10%;
+    /*width: 100%;*/
+    background-color: #272727;
+    font-family: 'PT_Sans-Web-Bold';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.copy{
+    flex:1;
+    padding: 10px 0;
+}
+
+.handmade{
+    padding: 10px 0;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    text-align: right;
+}
