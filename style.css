@@ -43,7 +43,7 @@ header, nav, main {
 }
 
 body{
-    background-image: url(/Effects/back.png);
+    /* background-image: url(/Effects/back.png); */
 }
 
 h2{
@@ -68,6 +68,8 @@ p{
 /* ====== */
 
 header{
+    display: flex;
+    justify-content: space-between;
     /* position: relative; */
     z-index:2;
     height: 20px;
@@ -76,7 +78,7 @@ header{
 
 
 .acc_name{
-    display: inline-block;
+    /* display: inline-block; */
     color: white;
     font-family: 'PT_Sans-Web-Bold';
     font-weight: bold;
@@ -90,8 +92,8 @@ header{
     font-style: normal;
 }
 .sign_btn{
-    display: inline-block;
-    float: right;
+    /* display: inline-block;
+    float: right; */
 }
 
 .sign_btn>a{
@@ -101,18 +103,26 @@ header{
     font-weight: bold;
 }
 
+.nav-toggle {
+    display: none;
+    width: 0px;
+    position: relative;
+    cursor: pointer;
+}
+.nav-toggle img{
+    /* display: none; */
+    width: 0px;
+}
+
+
 
 /* =NAV== */
 /* ====== */
 
 nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
+    /* justify-content: space-between; */
     height: 100px;
-    position: relative;
-    z-index: 1;
     background-color: inherit;
     box-shadow:2px 0 2px 2px black;
     opacity: 1;
@@ -124,18 +134,52 @@ nav{
     border-radius: none;
 }
 nav>div{
-    display: inline-block;
+    flex: 1 1 auto;
+    align-self: center;
 }
 
 .menu{
-flex: 3;
+
 }
 .logo{
-flex: 1;
+
 }
 
 .search_bar{
-flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search_box_input{
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    margin-right: 2px;
+    opacity: 0.6;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    box-shadow: inset 1px 1px 10px 1px rgba(202, 202, 202, 0.3);
+}
+
+.search_box_button{
+    font-family: 'PT_sans_web_regular';
+    border: none;
+    /* font-weight: 600; */
+    /* border: 1px sold rgb(173, 173, 173); */
+    /* box-shadow: inset 3px 3px 10px rgb(133, 133, 133); */
+    padding: 5px 5px;
+    color: rgba(175, 175, 175, 0.9);
+    background-color: rgba(111, 111, 111, 0.0);
+    /* opacity: 0.5; */
+
+}
+
+.search_box_input:focus + .search_box_button {
+    color:rgba(128, 128, 128, 0.8);
+    /* border: 1px solid rgba(173, 173, 173, 0.2); */
+    border: none;
+    box-shadow: inset 1px 1px 10px  rgba(133, 133, 133, 0.1);
+    background-color: rgba(218, 216, 216, 0.1);
+    font-weight: 500;
 }
 
 .menu>ul>li{
@@ -285,6 +329,21 @@ main>article>h3>span{
 }
 
 @media (max-width: 1280px) {
+
+    .nav-toggle{
+        display: block;
+        width: 40px;
+    }
+
+    .nav-toggle>img{
+       
+        width: 20px;
+    }
+    .sign_btn{
+        float: right;
+    }
+
+
 
     main{
         
