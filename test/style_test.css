@@ -1,0 +1,25 @@
+footer{
+    background-color: rgb(155, 253, 169);
+    height: 200px;
+    display: flex;
+}
+
+main{
+    background-color: rgba(241, 68, 68, 0.267);
+    height: 500px;
+    display: flex;
+}
+
+.fl, .ml{
+    flex: 1 1;
+    margin: 5px;
+    background-color: rgba(107, 109, 248, 0.76);
+}
+
+
+.fr, .mr{
+    flex: 3 1;
+    margin: 5px;
+    background-color: rgba(248, 99, 203, 0.76);
+}
+

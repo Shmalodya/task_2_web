@@ -58,8 +58,9 @@ h3{
 h4{
     font-family: 'Pacifico';
     font-size: 30px;
-    /* font-weight: bold; */
     letter-spacing: 3px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 img{
@@ -77,7 +78,6 @@ p{
 header{
     display: flex;
     justify-content: space-between;
-    /* position: relative; */
     z-index:2;
     height: 20px;
     background-color: #272727;
@@ -85,7 +85,6 @@ header{
 
 
 .acc_name{
-    /* display: inline-block; */
     color: white;
     font-family: 'PT_Sans-Web-Bold';
     font-weight: bold;
@@ -97,10 +96,6 @@ header{
     font-family: PT_Sans-Web-Regular;
     font-weight: normal;
     font-style: normal;
-}
-.sign_btn{
-    /* display: inline-block;
-    float: right; */
 }
 
 .sign_btn>a{
@@ -117,7 +112,6 @@ header{
     cursor: pointer;
 }
 .nav-toggle img{
-    /* display: none; */
     width: 0px;
 }
 
@@ -128,8 +122,6 @@ header{
 
 nav{
     display: flex;
-    
-    /* justify-content: space-between; */
     height: 100px;
     background-color: inherit;
     box-shadow:2px 0 2px 2px black;
@@ -169,19 +161,14 @@ nav>div{
 .search_box_button{
     font-family: 'PT_sans_web_regular';
     border: none;
-    /* font-weight: 600; */
-    /* border: 1px sold rgb(173, 173, 173); */
-    /* box-shadow: inset 3px 3px 10px rgb(133, 133, 133); */
     padding: 5px;
     color: rgba(175, 175, 175, 0.9);
     background-color: rgba(111, 111, 111, 0.0);
-    /* opacity: 0.5; */
 
 }
 
 .search_box_input:focus + .search_box_button {
     color:rgba(128, 128, 128, 0.8);
-    /* border: 1px solid rgba(173, 173, 173, 0.2); */
     border: none;
     box-shadow: inset 1px 1px 10px  rgba(133, 133, 133, 0.1);
     background-color: rgba(218, 216, 216, 0.1);
@@ -223,21 +210,17 @@ nav>div{
     border-top: inset 0px 3px 50%  black;
 }
 
+
 .about_page{
-    margin-right:0px;
-}
-.about_page_block>div:first-child{
-    flex: 4 1 auto;
-    /* margin: 5px 0px 5px 0px; */
+    flex: 3 1;
+    /* margin: 5px 30px 5px 0px; */
 }
 
-.about_page_block>div:last-child{
-    flex: 1 1 auto;
+.add_to_card{
+    flex: 1 1;
     align-self: center;
-    /* margin: 5px 0px 5px 0px; */
 }
 .about_page>div:first-child{
-    /* padding: 20px 0px 0px 15px; */
     font-weight: bold;
     text-shadow: 3px 3px 10px black;
 }
@@ -250,24 +233,42 @@ nav>div{
     padding-bottom: 15px;
 }
 
-
 /* button add to card */
 
 a.add_cart_btn{
+    transition: 0.6s;
     width: 100%;
     display: block;
-    text-decoration: none; /* убирать подчёркивание у ссылок */
-  user-select: none; /* убирать выделение текста */
-  background: rgb(247, 10, 10); /* фон кнопки */
-  /* padding: .7em 1.5em; отступ от текста */
-  outline: none;
-
+    text-decoration: none; 
+    user-select: none; 
+    background: #B23434; 
+    color: #EEEBEC;
+    font-weight: bold;
+    text-shadow: 2px 1px 5px rgb(46, 46, 46);
+    outline: none;
+    /* margin-right: 30px; */
+    text-align: center;
+    padding: 20px 0px ;
+    border-radius: 10px;
+    box-shadow: inset 0px 1px 1px rgb(168, 112, 112),inset 0px -2px 4px rgb(43, 29, 29);
 }
 
+a.add_cart_btn:hover{
+    transition: 0.6s;
+    box-shadow: inset 0px 1px 10px rgb(82, 18, 18),inset 0px -1px 2px  rgb(250, 203, 203);
+}
+
+a.add_cart_btn:active{
+    box-shadow: inset 0px 1px 10px rgb(36, 8, 8),inset 0px -1px 2px  rgb(95, 27, 27);
+    background: #90282C;
+}
+
+
+
 .add_to_card>span{
-    color: rgb(214, 214, 214);
+    color: #EEEBEC;
     font-weight: bold;
-    text-shadow: 2px 2px 10px rgb(46, 46, 46);
+    text-shadow: 2px 1px 5px rgb(46, 46, 46);
     font-size: 10px;
     display: block;
     text-align: center;
@@ -284,26 +285,15 @@ main{
     flex-flow: row;
 }
 
-/* main>article:nth-child(1n){
-    flex: 3 1 auto;
-    margin: 5px 30px 5px 0px;
-}
-
-main>article:nth-child(2n){
-    flex: 1 1 auto;
-    margin: 5px 0px 5px 0px;
-} */
-
 .article_block_1{
-    flex: 3 1 auto;
+    flex: 3 1;
     margin: 5px 30px 5px 0px;
 }
 
 .article_block_2{
-    flex: 1 1 auto;
+    flex: 1 1;
     margin: 5px 0px 5px 0px;
 }
-
 
 main>article>p{
     text-align: justify;
@@ -319,7 +309,6 @@ main>article>h3{
 
 main>article>h3>span{
     font-family: 'PT_sans_web_regular';
-    /* font-variant: unset; */
     text-decoration: line-through;
     color: rgb(177, 177, 177);
     font-weight: inherit;
@@ -330,10 +319,63 @@ main>article>h3>span{
     margin-bottom: 5px;
 }
 
+.rec_img>img{
+    width: 100%;
+}
+
 .rec_img>span{
     display: block;
     text-align: center;
     color: gray;
+}
+
+.article_block_1>p>img:before{
+    content: "ON SALE";
+    color: white;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+    display: block;
+    right: 200px;
+}
+
+.top_revievs::before{
+    content: open-quote;
+    /* display: inline-block; */
+    position: absolute;
+    left: 10%;
+    margin-top: -60px;
+    
+    font-size: 150px;
+    color: rgba(201, 199, 199, 0.514);
+}
+
+.top_revievs::after {
+    content: no-close-quote;
+  }
+
+.top_revievs{
+    display: block;
+    margin:40px 0px 40px 90px;
+    color: gray;
+
+    
+}
+
+blockquote{
+    font-size: 25px;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+}
+
+.top_revievs>span{
+    margin: 10px 0px 0px 40px;
+}
+
+blockquote, .top_revievs>span{
+    font-style: italic; 
+    /* margin: 10px 0px 0px 20px; */
 }
 
 .article_block_2>img{
@@ -342,7 +384,6 @@ main>article>h3>span{
 
 .article_block_2>h2{
     margin-top: 20px;
-    /* border-top: 1px dotted gray; */
 }
 
 .line_after{
@@ -357,21 +398,16 @@ main>article>h3>span{
 /* TRACK BUTTON */
 
 .music_block{
-    
     display: grid;
     grid-column-gap: 15px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "track track" "track track";
-    /* margin-top: 200px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "track track" "track track";
 }
 
 .track{
-    
-    /* width: 50%; */
     overflow: hidden;
     background-color: #FAC7D2;
-    /* width: 100%; */
     height: 80px;
     border-radius: 4px;
     margin-top: 10px;
@@ -382,7 +418,6 @@ main>article>h3>span{
     overflow: hidden;
     transform: skew(11deg);
     position: relative;
-
     transform: rotate(-45deg);
     background-color: red;
     color: rgb(209, 209, 209);
@@ -398,7 +433,6 @@ main>article>h3>span{
 .play{
     position: absolute;
     margin-left: 40px;
-
     display: block;
     background-color:rgb(255, 0, 0);
     height: 50px;
@@ -451,17 +485,11 @@ main>article>h3>span{
     font-family: PT_Sans-Web-Regular;
     font-weight: normal;
     font-style: normal;
-
 }
 
 .t_footer>div:nth-child(2n){
     padding: 5px 10px;
 }
-
-/* .t_footer>div>h2{
-    font-family:Pacifico;
-
-} */
 
 .t_footer>div>p{
     text-align: justify;
@@ -479,7 +507,6 @@ main>article>h3>span{
 .button{
     font-size: 14px;
     display: block;
-    /* width: 99%; */
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -494,7 +521,6 @@ main>article>h3>span{
     background-color: #272727;
     font-size: 15px;
     color: #6B6B6B;
-    
 }
 
 .copy{
@@ -509,6 +535,14 @@ main>article>h3>span{
     font-family: 'PT_sans_web_regular';
     font-weight: bold;
 }
+
+
+/* .rec_img>img:hover{
+    transition: 3s;
+    transform: scaleX(-1);
+    background: red;
+} */
+
 
 @media (max-width: 1280px) {
 
@@ -545,7 +579,6 @@ main>article>h3>span{
     .logo{
         align-self: center;
         margin-left: 0px;
-        /* width: 100px; */
     }
 
     .menu_bottom>ul>li{
@@ -560,7 +593,6 @@ main>article>h3>span{
     .menu_bottom>ul>li>a{
         text-decoration: none;
         color: green;
-        /* padding: 20px; */
         font-size: 20px;
     }
 
@@ -590,6 +622,8 @@ main>article>h3>span{
         transition: 0.4s;
     }
 
+
+
     .about_page_block, .t_footer, .b_footer{
         padding: 0 2%;
     }
@@ -603,27 +637,39 @@ main>article>h3>span{
     .acc_name{
         flex: 1 1 auto;
     }
+
     .nav-toggle>img{
-       
         width: 20px;
     }
+
     .sign_btn{
         float: right;
     }
 
-
-
     main{
         flex-flow: column wrap;
     }
+
+    .top_revievs::before{
+        left: 2%;
+    }
+    .about_page_block{
+        flex-direction: column;
+
+        /* display: inline-block; */
+        /* width: 100%; */
+        /* padding-right: 10%; */
+    }
+
+    .add_to_card{
+        align-self: stretch;
+        margin-bottom: 20px;
+    }
+
     .recomends_block{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-    }
-
-    .rec_img{
-
     }
 
     .music_block{
@@ -636,7 +682,6 @@ main>article>h3>span{
     }
 
     .song_name, .duration{
-
         margin-left: 250px;
     }
 
