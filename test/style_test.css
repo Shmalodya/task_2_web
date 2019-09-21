@@ -1,19 +1,30 @@
-footer{
-    background-color: rgb(155, 253, 169);
+footer, header, main, nav{
+    display: flex;
     height: 200px;
     display: flex;
 }
 
+footer{
+    background-color: rgb(155, 253, 169);
+    
+}
+
 main{
-    background-color: rgba(241, 68, 68, 0.267);
-    height: 500px;
-    display: flex;
+    background-color: rgba(255, 0, 0, 0.267);
+    
+    
+}
+
+header{
+    background-color: rgba(255, 0, 0, 0.267);
+    
+    
 }
 
 .fl, .ml{
     flex: 1 1;
     margin: 5px;
-    background-color: rgba(107, 109, 248, 0.76);
+    background-color: rgba(189, 226, 24, 0.76);
 }
 
 
@@ -22,4 +33,33 @@ main{
     margin: 5px;
     background-color: rgba(248, 99, 203, 0.76);
 }
+.logo{
+    flex: 1 1;
+    height: 200px;
+    background-color: black;
+}
 
+.nav_ml, .nav_mr{
+    flex: 2 1;
+}
+
+@media (max-width:1280px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+    .nav_ml{
+        order: 1;
+    }
+    
+    .nav_mr{
+        oreder:3;
+    }
+    .logo{
+
+    }
+}

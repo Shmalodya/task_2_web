@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Pacifico';
-    src: url(./Fonts/Pacifico.ttf);
+    src: url(../Fonts/Pacifico.ttf);
     font-weight: normal;
     font-style: normal;
     }
@@ -9,23 +9,23 @@
     font-family: 'PT_sans_web_bold';
     font-weight: bold;
     font-style: normal;
-    src: url(./Fonts/PT_Sans-Web-Bold.ttf);
+    src: url(../Fonts/PT_Sans-Web-Bold.ttf);
     }
 @font-face{
     font-family: 'PT_sans_web_bolditalic';
-    src: url(./Fonts/PT_Sans-Web-BoldItalic.ttf);
+    src: url(../Fonts/PT_Sans-Web-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
     }
 @font-face{
     font-family: 'PT_sans_web_italic';
-    src: url(./Fonts/PT_Sans-Web-Italic.ttf);
+    src: url(../Fonts/PT_Sans-Web-Italic.ttf);
     font-weight: normal;
     font-style: italic;
     }
  @font-face{
      font-family: 'PT_sans_web_regular';
-     src: url(./Fonts/PT_Sans-Web-Regular.ttf);
+     src: url(../Fonts/PT_Sans-Web-Regular.ttf);
      font-weight: normal;
      font-style: normal;
      }
@@ -175,6 +175,10 @@ nav>div{
     font-weight: 500;
 }
 
+.back_to_top, .your_acc{
+    display: none;
+}
+
 .menu>ul>li{
     border: none;
     list-style: none;
@@ -207,7 +211,7 @@ nav>div{
     color:rgb(221, 221, 221); 
     padding: 20px 10%;
     background-color: #CC3333;
-    border-top: inset 0px 3px 50%  black;
+    box-shadow: inset 0px 1px 5px  black,inset -1px 0px 5px  rgb(236, 13, 13) ;
 }
 
 
@@ -550,11 +554,99 @@ blockquote, .top_revievs>span{
         transition: 1s;
     }
 
+    header, nav, main {
+        padding: 5px 2%;
+        transition: 0.4s;
+    }
+
     .about_page>div:first-child{
         padding-top: 20px;
     }
 
-    .bottom_menu{
+    /* MENU DOWN */
+    /* ========= */
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    main{
+        order: 3;
+    }
+
+    footer{
+        order:5;
+    }
+
+    header{
+        order:1;
+        margin-bottom: 120px;
+        transition: 0s;
+    }
+
+    .about_page_block{
+        order:2;
+    }
+
+    nav{
+        order:4;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    .menu_top>ul>li{
+        padding: 10px 0px;
+        border-top: 1px solid rgb(160, 159, 159);
+    }
+
+    .menu_top>ul>li:last-child{
+        border-bottom: 1px solid rgb(160, 159, 159);
+    }
+
+    .back_to_top, .your_acc{
+        display: inline;
+    }
+
+    .nav_top{
+        padding: 40px 2%;
+    }
+
+    .nav_top>div{
+        align-self: stretch;
+    }
+
+    .search_bar_top{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    .search_box_button{
+        value: "GO";
+    }
+
+    .logo{
+        /* display: block; */
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        margin: 0px;
+        top: 25px;
+        /* padding-right: 5px; */
+        left: 0;
+    }
+
+    /*           */
+    /* ========= */
+
+    /* .bottom_menu{
        margin-top: 50px;
         height: 300px;
         background-color: inherit;
@@ -574,36 +666,28 @@ blockquote, .top_revievs>span{
         flex-flow: column nowrap;
         justify-content: center;
         align-content: flex-start;
-}
+} */
 
-    .logo{
-        align-self: center;
-        margin-left: 0px;
-    }
+  
 
-    .menu_bottom>ul>li{
-        padding: 10px 0px;
-        border-top: 1px solid rgb(160, 159, 159);
-    }
+    /* MENU BOTTOM */
 
-    .menu_bottom>ul>li:last-child{
-        border-bottom: 1px solid rgb(160, 159, 159);
-    }
+    
 
-    .menu_bottom>ul>li>a{
+    /* .menu_bottom>ul>li>a{
         text-decoration: none;
         color: green;
         font-size: 20px;
-    }
+    } */
 
-    .bottom_menu, .search_bar_bottom{
+    /* .bottom_menu, .search_bar_top{
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-content: flex-start;
-    }
+    } */
 
-    .bottom_menu>div{
+    nav>div{
         align-self: center;
         width: 100%;
     }
@@ -617,12 +701,11 @@ blockquote, .top_revievs>span{
         width: 100%;
     }
 
-    header, nav, main {
-        padding: 5px 2%;
-        transition: 0.4s;
+    
+
+    .article_block_1{
+        margin-right: 0px;
     }
-
-
 
     .about_page_block, .t_footer, .b_footer{
         padding: 0 2%;

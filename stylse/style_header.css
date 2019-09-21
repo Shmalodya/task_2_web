@@ -1,0 +1,42 @@
+/* HEADER */
+/* ====== */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    z-index:2;
+    height: 20px;
+    background-color: #272727;
+}
+
+
+.acc_name{
+    color: white;
+    font-family: 'PT_Sans-Web-Bold';
+    font-weight: bold;
+}
+
+.manage_account>a{
+    text-decoration: none;
+    color: #6B6B6B;
+    font-family: PT_Sans-Web-Regular;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sign_btn>a{
+    text-decoration: none;
+    color: #6B6B6B;
+    font-family: 'PT_Sans-Web-Bold';
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: none;
+    width: 0px;
+    position: relative;
+    cursor: pointer;
+}
+.nav-toggle img{
+    width: 0px;
+}
