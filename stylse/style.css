@@ -500,7 +500,7 @@ blockquote, .top_revievs>span{
 }
 
 .email{
-    width: calc(97%);
+    width: calc(100% - 10px);
     /* width: 100%; */
     display: block;
     padding: 5px 5px;
@@ -630,6 +630,12 @@ blockquote, .top_revievs>span{
         value: "GO";
     }
 
+    .email{
+        margin:0px;
+        /* padding-right: 0px; */
+        /* padding: 0; */
+        width: calc(100% - 10px);
+    }
     .logo{
         /* display: block; */
         /* width: 100%; */

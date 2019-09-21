@@ -1,4 +1,4 @@
-footer, header, main, nav{
+/* footer, header, main, nav{
     display: flex;
     height: 200px;
     display: flex;
@@ -41,10 +41,10 @@ header{
 
 .nav_ml, .nav_mr{
     flex: 2 1;
-}
+} */
 
 @media (max-width:1280px){
-    body{
+    /* body{
         display: flex;
         flex-direction: column;
     }
@@ -61,5 +61,16 @@ header{
     }
     .logo{
 
+    } */
+
+    .search_bar_top{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    .search_box_button{
+        value: "GO";
     }
 }
