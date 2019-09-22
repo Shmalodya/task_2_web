@@ -43,6 +43,7 @@ header, nav, main {
 }
 
 body{
+    /* background-color: green; */
     /* background-image: url(/Effects/back.png); */
 }
 
@@ -596,6 +597,7 @@ blockquote, .top_revievs>span{
         flex-direction: column;
         align-items: flex-start;
         height: 100%;
+        box-shadow: none;
     }
 
     .menu_top>ul>li{
@@ -613,13 +615,16 @@ blockquote, .top_revievs>span{
 
     .nav_top{
         padding: 40px 2%;
+        
     }
 
     .nav_top>div{
         align-self: stretch;
+        /* box-shadow: 1px solod gray; */
     }
 
     .search_bar_top{
+        margin-top: 20px;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -630,12 +635,7 @@ blockquote, .top_revievs>span{
         value: "GO";
     }
 
-    .email{
-        margin:0px;
-        /* padding-right: 0px; */
-        /* padding: 0; */
-        width: calc(100% - 10px);
-    }
+    
     .logo{
         /* display: block; */
         /* width: 100%; */
@@ -649,6 +649,21 @@ blockquote, .top_revievs>span{
         left: 0;
     }
 
+    .search_box_input{
+        /* margin-right: 10%; */
+        margin: 0;
+        padding: 0;
+        padding:2px 0px 2px 0px;
+        /*  */
+        margin-bottom: 2px;
+    }
+
+    .email{
+        margin:0px;
+        /* padding-right: 0px; */
+        /* padding: 0; */
+        width: calc(100% - 10px);
+    }
     /*           */
     /* ========= */
 
@@ -727,8 +742,13 @@ blockquote, .top_revievs>span{
         flex: 1 1 auto;
     }
 
-    .nav-toggle>img{
+    .nav-toggle>a:active{
+        transition: 1s;
+    }
+
+    .nav-toggle>a>img{
         width: 20px;
+        
     }
 
     .sign_btn{
@@ -783,3 +803,34 @@ blockquote, .top_revievs>span{
         padding: 5px 0px;
     }
   }
+
+  
+@media (max-width: 720px) {
+    *{
+        margin: 0;
+    }
+    .rec_img>img{
+        width: 45vw;
+    }
+
+    .rec_img>span{
+        font-size: 10pt;
+    }
+
+    .b_footer{
+        height: 44px;
+    }
+    .pacifico{
+        font-size: 6vw;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .b_footer{
+        height: 44px;
+    }
+    .pacifico{
+        font-size: 7vw;
+    }
+}
